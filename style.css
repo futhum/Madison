@@ -1,0 +1,156 @@
+
+/*Top bar CSS */
+#top-bar{
+    background-color: rgb(51,153,204);  
+}
+
+.container-top{
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.top-bar-text{
+    padding-top: 10px;
+    font-size: 13px;
+    color: rgb(230,225,223);
+}
+
+/* CSS for hat-bar*/
+
+.container-hat{
+    margin-left: 10%;
+    margin-right: 8%;
+}
+
+.img-logo{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.color-fa{
+    color:rgb(153,153,153);
+}
+.hat-bar-text{
+    color: rgb(153,153,153);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(153,153,153);
+}
+
+a:hover{
+	text-decoration: none;
+	color: rgb(51,178,226);
+}
+
+/* Navigation CSS  */
+
+.container-nav{
+    margin-left: 10%;
+    margin-right: 8%;
+}
+
+.navigation-text{
+    color: rgb(153,153,153);
+}
+
+.nav-link {
+    display: block;
+    padding: .20rem 1.5rem;
+}
+
+.breadcrumb{
+    background-color: rgb(255,255,255);
+    padding-left: 0;
+}
+
+.breadcrumb.navigation-text{
+    font-size: 14px;
+    
+}
+
+/* Main section CCS */
+
+.container-main{
+    margin-left: 10%;
+    margin-right: 8%;
+}
+
+#end{
+    height: 70px;
+}
+
+/* Left menu CSS */
+
+#left-menu{
+   width: 300px;
+}
+
+#left-menu-text{
+    color:  rgb(51,178,226);
+    margin-bottom: 8px;
+}
+
+.stat{
+    background-color: rgb(244,244,244);
+    border-color: rgb(204,204,204);
+    border-style: solid;
+    border-width: 1px;
+    
+}
+
+.stat-text{
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-left: 8px;
+    color: rgb(99,99,99);
+}
+
+.elem{
+    border-color: rgb(204,204,204);
+    border-style: solid;
+    border-width: 1px; 
+}
+
+.dollars{
+    color:rgb(51,178,226);
+    margin-left: 8px;
+}
+
+.elem-text{
+    color: rgb(162,160,165);
+    margin-bottom: 18px;
+    margin-top: 18px;
+    margin-left: 8px;
+}
+
+
+/* Gallery CSS */
+
+#gallery{
+    width: 900px;
+}
+
+#gallery-text{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(99,99,99);
+}
+
+.gallery-text-nav{
+    color: rgb(99,99,99);
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    margin-right: 15px
+
+}
+
+.sort-bar{
+    background-color: rgb(244,244,244);
+    border-color: rgb(204,204,204);
+    border-style: solid none;
+    border-width: 1px;
+    height: 50px;
+}

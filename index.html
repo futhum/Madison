@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shopping cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="fontawesome-free-5.0.4/svg-with-js/js/fontawesome-all.js"></script>
+    <link link="" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <section id="top-bar">
+        <div class="container-top">
+            <div class="row justify-content-between">
+                <div class="col-auto mr-auto">
+                    <p class="top-bar-text" id="left-text">
+                        YOUR LANGUAGE 
+                        <select>
+                                <option>English</option>
+                                <option>Русский</option>
+                        </select>
+                    </p>  
+                </div>
+                <div class="col-auto">
+                    <p class="top-bar-text">WELCOME</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hat-bar">
+        <div class="container-hat">
+            <div class="row justify-content-between">
+                <div class="col-auto">
+                    <img class="img-logo" src="images/logo.png" alt="Logo">
+                </div>
+                <div class="col-auto">
+                    <p>
+                         <span class="color-fa"><i class="fa fa-user" aria-hidden="true"></i></span>
+                         <span class="hat-bar-text"><a href="">ACCOUNT </a></span>
+                         <span class="color-fa"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                         <span class="hat-bar-text"><a href="">CART</a></span>                       
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="navigation">
+        <div class="container-nav">
+                <nav class="nav navigation-text">
+                        <a class="nav-link" href="#">WOMEN</a>
+                        <a class="nav-link" href="#">MEN</a>
+                        <a class="nav-link" href="#">ACCESSORIES</a>
+                        <a class="nav-link" href="#">HOME & DECOR</a>
+                        <a class="nav-link" href="#">SALE</a>
+                        <a class="nav-link" href="#">VIP</a>
+                </nav>
+                <hr color="#999999" />
+                <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb navigation-text">
+                          <li class="breadcrumb-item"><a href="#">HOME</a></li>
+                          <li class="breadcrumb-item"><a href="#">HOME & DECOR</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">BED & BATH</li>
+                        </ol>
+                </nav>
+        </div>
+    </section>
+    <section id="main">
+        <div class="container-main">
+            <div class="row">
+                <div class="col-auto" id="left-menu">
+                    <p id="left-menu-text">SHOP BY</p>
+                    <div class="stat" id="one">
+                        <p class="stat-text">PRICE</p>
+                    </div>
+                    <div class="elem" id="one">
+                        <p class="elem-text"><a class="dollars" href="">$0.00 - $99.9</a><span class="elem-text">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">$100.00 - $199.9</a><span class="elem-text">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">$200.00 and above</a><span class="elem-text">(4)</span></p>
+                    </div>
+                    <div class="stat" id="two">
+                        <p class="stat-text">COLOR</p>
+                    </div>
+                    <div class="elem" id="two">
+                        <p class="elem-text"><a class="dollars" href="">Blue</a><span class="elem-text">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Cognac</a><span class="elem-text">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Ivory</a><span class="elem-text">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Silver</a><span class="elem-text">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Taupe</a><span class="elem-text">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">White</a><span class="elem-text">(1)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Yellow</a><span class="elem-text">(1)</span></p>
+                    </div>
+                    <div class="stat" id="three">
+                        <p class="stat-text">MATERIAL</p>
+                    </div>
+                    <div class="elem" id="three">
+                        <p class="elem-text"><a class="dollars" href="">Cotton</a><span class="elem-text">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Other</a><span class="elem-text">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Shea</a><span class="elem-text">(1)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Silk</a><span class="elem-text">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Wool</a><span class="elem-text">(3)</span></p>
+                    </div>
+                    <div class="stat" id="four">
+                        <p class="stat-text">BED & BATH TYPE</p>
+                    </div>
+                    <div class="elem" id="four">
+                        <p class="elem-text"><a class="dollars" href="">Bath</a><span class="elem-text">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Bed</a><span class="elem-text">(6)</span></p>
+                    </div>
+                    <div class="stat" id="five">
+                        <p class="stat-text">DECOR TYPE</p>
+                    </div>
+                    <div class="elem" id="five">
+                        <p class="elem-text"><a class="dollars" href="">N/A</a><span class="elem-text">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Throw</a><span class="elem-text">(6)</span></p>
+                    </div>
+                    <div class="stat" id="six">
+                        <p class="stat-text">HOME & DECOR TYPE</p>
+                    </div>
+                    <div class="elem" id="six">
+                        <p class="elem-text"><a class="dollars" href="">Bed & Bath</a><span class="elem-text">(8)</span></p>
+                    </div>
+                </div>
+                <div class="col" id="gallery">
+                    <p id="gallery-text">BED & BATH</p>
+                    <div class="sort-nav">
+                        <div class="row">
+                            <div class="col-auto justify-content-between sort-bar">
+                                <p class="">
+                                    <span class="gallery-text-nav">SORT BY</span>
+                                    <select>
+                                            <option>Position</option>
+                                            <option>Ne position</option>
+                                    </select>
+                                    <span class="gallery-text-nav"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></span>
+                                    <span class="gallery-text-nav">VIEW AS</span>
+                                    <span class="gallery-text-nav"><i class="fa fa-th-large" aria-hidden="true"></i></span> 
+                                    <span class="gallery-text-nav"><i class="fa fa-align-justify" aria-hidden="true"></i></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="end">
+    </section>
+</body>
+</html>
