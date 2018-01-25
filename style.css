@@ -1,3 +1,13 @@
+/* Main */
+
+
+@media (max-width:1265px) {
+    body{
+        width: 1265px;
+    }
+  
+}
+
 
 /*Top bar CSS */
 #top-bar{
@@ -84,7 +94,7 @@ a:hover{
 /* Left menu CSS */
 
 #left-menu{
-   width: 300px;
+  /* width: 300px; */
 }
 
 #left-menu-text{
@@ -129,7 +139,27 @@ a:hover{
 /* Gallery CSS */
 
 #gallery{
-    width: 900px;
+    /*width: 900px;*/
+    
+}
+
+
+.position{
+   height: 480px;
+}
+
+
+.img_and_value{
+    height: 320px;
+}
+
+.gallery-nav{
+    color: rgb(99,99,99);
+    background-color: rgb(244,244,244);
+    border-color: rgb(204,204,204);
+    border-style: solid none;
+    border-width: 1px;
+    height: 50px;
 }
 
 #gallery-text{
@@ -138,8 +168,12 @@ a:hover{
     color: rgb(99,99,99);
 }
 
-.gallery-text-nav{
+.gallery-text-spc{
     color: rgb(99,99,99);
+    font-weight: bold;
+}
+
+.gallery-text-nav{
     padding-top: 10px;
     margin-bottom: 10px;
     margin-left: 8px;
@@ -153,4 +187,56 @@ a:hover{
     border-style: solid none;
     border-width: 1px;
     height: 50px;
+    
+}
+
+
+.discription{
+    text-align: center;
+    color: rgb(59,59,59);
+}
+
+.value{
+    text-align: center;
+    color: rgb(51,178,226);
+    margin-bottom: 0;
+}
+
+.gallery-img{
+    text-align: center;
+}
+
+button
+{
+  padding: 0;
+  border: 0;
+}
+
+.addTo{
+    
+    text-align: center;
+    color: rgb(51,178,226);
+    
+}
+
+.sale{
+    color:rgb(208,101,101);
+    font-size: 80%;
+    font-weight: 50%;
+    
+}
+
+.bot{
+    vertical-align: bottom;
+    position:absolute;
+}
+
+.sealed{
+    text-decoration:line-through;
+    color: rgb(162,160,165);
+}
+
+.mini-text{
+    font-size: 70%;
+    color: rgb(162,160,165);
 }
