@@ -1,22 +1,25 @@
 /* Main */
 
-
-@media (max-width:1265px) {
+@media (min-width:1300px) {
     body{
-        width: 1265px;
+        width: 1300px;
+        margin: 0 auto;
     }
-  
 }
-
 
 /*Top bar CSS */
 #top-bar{
-    background-color: rgb(51,153,204);  
+    background-color: rgb(51,153,204);
 }
 
 .container-top{
-    margin-left: 10%;
-    margin-right: 5%;
+    margin-left: 6%;
+    margin-right: 2%;
+}
+
+.container-top > div {
+    align-items: center;
+    height: 42px;
 }
 
 .top-bar-text{
@@ -28,28 +31,64 @@
 /* CSS for hat-bar*/
 
 .container-hat{
-    margin-left: 10%;
-    margin-right: 8%;
+    margin-left: 6.5%;
+    margin-right: 6%;
+    margin-bottom:  17px;
 }
 
 .img-logo{
-    margin-top: 10%;
-    margin-bottom: 10%;
+    height: 100px;
 }
 
 .color-fa{
     color:rgb(153,153,153);
 }
+
+.container-hat > div {
+    height: 110px;
+    align-items:  center;
+}
+
+.container-hat__cart {
+    align-self: flex-start;
+    padding-top: 8px;
+}
+
+#cart {
+    margin-left: 10px;
+    position: relative;
+}
+
+#cart-box {
+    position: absolute;
+    width: 323px;
+    height: 605px;
+    border: 5px solid #00A2E8;
+    left: -206px;
+    top: 28px;
+    background-color:  white;
+    z-index:  1;
+}
+
+#cart-box #cart-box__close {
+    display: inline-block;
+    background-color: red;
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+
 .hat-bar-text{
     color: rgb(153,153,153);
 }
 
-a{
+a {
     text-decoration: none;
     color: rgb(153,153,153);
 }
 
-a:hover{
+a:hover {
 	text-decoration: none;
 	color: rgb(51,178,226);
 }
@@ -57,8 +96,13 @@ a:hover{
 /* Navigation CSS  */
 
 .container-nav{
-    margin-left: 10%;
-    margin-right: 8%;
+    margin-left: 6%;
+    margin-right: 2.5%;
+}
+
+.container-nav hr {
+    margin-top: 4px;
+    margin-bottom: 0;
 }
 
 .navigation-text{
@@ -67,7 +111,7 @@ a:hover{
 
 .nav-link {
     display: block;
-    padding: .20rem 1.5rem;
+    padding: 0 1.4rem;
 }
 
 .breadcrumb{
@@ -76,15 +120,16 @@ a:hover{
 }
 
 .breadcrumb.navigation-text{
-    font-size: 14px;
-    
+    font-size: 13px;
+    margin-bottom: 14px;
+    padding-bottom:  0;
 }
 
 /* Main section CCS */
 
 .container-main{
-    margin-left: 10%;
-    margin-right: 8%;
+    margin-left: 6%;
+    margin-right: 10%;
 }
 
 #end{
@@ -93,8 +138,8 @@ a:hover{
 
 /* Left menu CSS */
 
-#left-menu{
-  /* width: 300px; */
+#left-menu .stat:first-of-type {
+    border-top: 1px solid rgb(204,204,204);
 }
 
 #left-menu-text{
@@ -106,51 +151,65 @@ a:hover{
     background-color: rgb(244,244,244);
     border-color: rgb(204,204,204);
     border-style: solid;
-    border-width: 1px;
-    
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
 }
 
 .stat-text{
-    margin-bottom: 8px;
-    margin-top: 8px;
+    margin-bottom: 0;
+    margin-top: 0;
     margin-left: 8px;
     color: rgb(99,99,99);
+    line-height: 33px;
 }
 
 .elem{
     border-color: rgb(204,204,204);
     border-style: solid;
-    border-width: 1px; 
+    border-width: 1px;
+    color: rgb(162,160,165);
 }
 
 .dollars{
     color:rgb(51,178,226);
-    margin-left: 8px;
+    margin-left: 26px;
 }
 
 .elem-text{
-    color: rgb(162,160,165);
-    margin-bottom: 18px;
-    margin-top: 18px;
-    margin-left: 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-
+.elem-count {
+    margin-left: 6px;
+}
 /* Gallery CSS */
 
 #gallery{
-    /*width: 900px;*/
-    
+    max-width: 680px;
+    padding:  0;
 }
 
+#gallery .gallery__items {
+    justify-content: space-between;
+    margin:  0;
+}
 
 .position{
-   height: 480px;
+   width:  159px;
+   margin-bottom:  15px;
 }
 
-
 .img_and_value{
-    height: 320px;
+    height: 285px;
+}
+.img_and_value .gallery-img {
+    border: 1px solid #EDEDED;
+    width: 157px;
+    height: 157px;
+    box-sizing: content-box;
 }
 
 .gallery-nav{
@@ -159,13 +218,20 @@ a:hover{
     border-color: rgb(204,204,204);
     border-style: solid none;
     border-width: 1px;
-    height: 50px;
+    height: 40px;
+    margin-bottom:  15px;
+}
+
+.gallery-nav > div {
+    align-items: center;
+    height: 100%;
 }
 
 #gallery-text{
     font-size: 20px;
     font-weight: bold;
     color: rgb(99,99,99);
+    margin-bottom: 1.1em;
 }
 
 .gallery-text-spc{
@@ -174,11 +240,9 @@ a:hover{
 }
 
 .gallery-text-nav{
-    padding-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0 !important;
     margin-left: 8px;
-    margin-right: 15px
-
+    margin-right: 15px;
 }
 
 .sort-bar{
@@ -187,13 +251,14 @@ a:hover{
     border-style: solid none;
     border-width: 1px;
     height: 50px;
-    
 }
-
 
 .discription{
     text-align: center;
     color: rgb(59,59,59);
+    font-size:  15px;
+    line-height:  20px;
+    margin-bottom: 5px;
 }
 
 .value{
@@ -204,26 +269,40 @@ a:hover{
 
 .gallery-img{
     text-align: center;
+    margin-bottom: 4px;
 }
 
-button
-{
+.gallery-img img {
+    height: 156px;
+    max-width: 156px;
+}
+
+.gallery-img > a {
+    border-radius: 0;
+    border: none;
+    background-color:  #3399CC;
+    line-height:  33px;
+    padding-bottom:  0;
+    padding-top:  0;
+    font-size: 0.85em;
+}
+
+button {
   padding: 0;
   border: 0;
 }
 
 .addTo{
-    
     text-align: center;
     color: rgb(51,178,226);
-    
+    margin-bottom:  13px;
+    line-height: 13px;
 }
 
 .sale{
     color:rgb(208,101,101);
     font-size: 80%;
     font-weight: 50%;
-    
 }
 
 .bot{
@@ -239,4 +318,10 @@ button
 .mini-text{
     font-size: 70%;
     color: rgb(162,160,165);
+}
+
+/* CSS for JS toggle */
+
+.hidden {
+    display: none;
 }
