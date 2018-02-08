@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Shopping cart</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script defer src="fontawesome-free-5.0.4/svg-with-js/js/fontawesome-all.js"></script>
     <link link="" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="main.js"></script>
 </head>
 <body>
     <section id="top-bar">
@@ -35,13 +33,16 @@
                 <div class="col-auto">
                     <img class="img-logo" src="images/logo.png" alt="Logo">
                 </div>
-                <div class="col-auto">
-                    <p>
+                <div class="col-auto container-hat__cart">
+                    <span>
                          <span class="color-fa"><i class="fa fa-user" aria-hidden="true"></i></span>
-                         <span class="hat-bar-text"><a href="">ACCOUNT </a></span>
-                         <span class="color-fa"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                         <span class="hat-bar-text"><a href="">CART</a></span>                       
-                    </p>
+                         <span class="hat-bar-text"><a href="">ACCOUNT </a></span>                     
+                    </span>
+                    <span id="cart">
+                        <span class="color-fa"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        <span class="hat-bar-text"><a href="">CART</a></span>
+                        <div id="cart-box" class="hidden"><div id="cart-box__close">CLOSE</div></div>                     
+                    </span>
                 </div>
             </div>
         </div>
@@ -69,57 +70,57 @@
     <section id="main">
         <div class="container-main">
             <div class="row">
-                <div class="col-4" id="left-menu">
+                <div class="col-3" id="left-menu">
                     <p id="left-menu-text">SHOP BY</p>
-                    <div class="stat" id="one">
+                    <div class="stat">
                         <p class="stat-text">PRICE</p>
                     </div>
-                    <div class="elem" id="one">
-                        <p class="elem-text"><a class="dollars" href="">$0.00 - $99.9</a><span class="elem-text">(2)</span></p>
-                        <p class="elem-text"><a class="dollars" href="">$100.00 - $199.9</a><span class="elem-text">(2)</span></p>
-                        <p class="elem-text"><a class="dollars" href="">$200.00 and above</a><span class="elem-text">(4)</span></p>
+                    <div class="elem">
+                        <p class="elem-text"><a class="dollars" href="">$0.00 - $99.9</a><span class="elem-count">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">$100.00 - $199.9</a><span class="elem-count">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">$200.00 and above</a><span class="elem-count">(4)</span></p>
                     </div>
-                    <div class="stat" id="two">
+                    <div class="stat">
                         <p class="stat-text">COLOR</p>
                     </div>
-                    <div class="elem" id="two">
-                        <p class="elem-text"><a class="dollars" href="">Blue</a><span class="elem-text">(2)</span></p>
-                        <p class="elem-text"><a class="dollars" href="">Cognac</a><span class="elem-text">(2)</span></p>
-                        <p class="elem-text"><a class="dollars" href="">Ivory</a><span class="elem-text">(2)</span></p>
-                        <p class="elem-text"><a class="dollars" href="">Silver</a><span class="elem-text">(2)</span></p>
-                        <p class="elem-text"><a class="dollars" href="">Taupe</a><span class="elem-text">(2)</span></p>
-                        <p class="elem-text"><a class="dollars" href="">White</a><span class="elem-text">(1)</span></p>
-                        <p class="elem-text"><a class="dollars" href="">Yellow</a><span class="elem-text">(1)</span></p>
+                    <div class="elem">
+                        <p class="elem-text"><a class="dollars" href="">Blue</a><span class="elem-count">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Cognac</a><span class="elem-count">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Ivory</a><span class="elem-count">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Silver</a><span class="elem-count">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Taupe</a><span class="elem-count">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">White</a><span class="elem-count">(1)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Yellow</a><span class="elem-count">(1)</span></p>
                     </div>
-                    <div class="stat" id="three">
+                    <div class="stat">
                         <p class="stat-text">MATERIAL</p>
                     </div>
-                    <div class="elem" id="three">
-                        <p class="elem-text"><a class="dollars" href="">Cotton</a><span class="elem-text">(2)</span></p>
-                        <p class="elem-text"><a class="dollars" href="">Other</a><span class="elem-text">(2)</span></p>
-                        <p class="elem-text"><a class="dollars" href="">Shea</a><span class="elem-text">(1)</span></p>
-                        <p class="elem-text"><a class="dollars" href="">Silk</a><span class="elem-text">(2)</span></p>
-                        <p class="elem-text"><a class="dollars" href="">Wool</a><span class="elem-text">(3)</span></p>
+                    <div class="elem">
+                        <p class="elem-text"><a class="dollars" href="">Cotton</a><span class="elem-count">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Other</a><span class="elem-count">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Shea</a><span class="elem-count">(1)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Silk</a><span class="elem-count">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Wool</a><span class="elem-count">(3)</span></p>
                     </div>
-                    <div class="stat" id="four">
+                    <div class="stat">
                         <p class="stat-text">BED & BATH TYPE</p>
                     </div>
-                    <div class="elem" id="four">
-                        <p class="elem-text"><a class="dollars" href="">Bath</a><span class="elem-text">(2)</span></p>
-                        <p class="elem-text"><a class="dollars" href="">Bed</a><span class="elem-text">(6)</span></p>
+                    <div class="elem">
+                        <p class="elem-text"><a class="dollars" href="">Bath</a><span class="elem-count">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Bed</a><span class="elem-count">(6)</span></p>
                     </div>
-                    <div class="stat" id="five">
+                    <div class="stat">
                         <p class="stat-text">DECOR TYPE</p>
                     </div>
-                    <div class="elem" id="five">
-                        <p class="elem-text"><a class="dollars" href="">N/A</a><span class="elem-text">(2)</span></p>
-                        <p class="elem-text"><a class="dollars" href="">Throw</a><span class="elem-text">(6)</span></p>
+                    <div class="elem">
+                        <p class="elem-text"><a class="dollars" href="">N/A</a><span class="elem-count">(2)</span></p>
+                        <p class="elem-text"><a class="dollars" href="">Throw</a><span class="elem-count">(6)</span></p>
                     </div>
-                    <div class="stat" id="six">
+                    <div class="stat">
                         <p class="stat-text">HOME & DECOR TYPE</p>
                     </div>
-                    <div class="elem" id="six">
-                        <p class="elem-text"><a class="dollars" href="">Bed & Bath</a><span class="elem-text">(8)</span></p>
+                    <div class="elem">
+                        <p class="elem-text"><a class="dollars" href="">Bed & Bath</a><span class="elem-count">(8)</span></p>
                     </div>
                 </div>
                 <div class="col-8" id="gallery">
@@ -154,8 +155,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                            <div class="col-3 position">
+                    <div class="row gallery__items">
+                            <div class="position">
                                 <div class="img_and_value">
                                     <p class="gallery-img"><img src="images/oil_lemon.png" alt="Lemon oil"></p>
                                     <p class="discription">BODY WASH WITH LEMON FLOWER EXTRACT AND ALOE VERA</p>
@@ -165,7 +166,7 @@
                                 <p class="addTo"><a class="addTo" href="">Add to Wishlist</a></p>
                                 <p class="addTo"><a class="addTo" href="">Add to Compare</a></p>
                             </div>
-                            <div class="col-3 position">
+                            <div class="position">
                                 <div class="img_and_value">
                                         <p class="gallery-img"><img src="images/oil_milk.png" alt="Lemon oil"></p>
                                         <p class="discription">SHEA ENFUSED HYDRATION BODY LOTION</p>
@@ -175,7 +176,7 @@
                                 <p class="addTo"><a class="addTo" href="">Add to Wishlist</a></p>
                                 <p class="addTo"><a class="addTo" href="">Add to Compare</a></p>
                             </div>
-                            <div class="col-3 position">
+                            <div class="position">
                                 <div class="img_and_value">
                                         <p class="gallery-img"><img src="images/pillow_silk.png" alt="Lemon oil"></p>
                                         <p class="discription">TITIAN RAW SILK PILLOW</p>
@@ -187,7 +188,7 @@
                                 <p class="addTo"><a class="addTo" href="">Add to Wishlist</a></p>
                                 <p class="addTo"><a class="addTo" href="">Add to Compare</a></p>  
                             </div>
-                            <div class="col-3 position">
+                            <div class="position">
                                 <div class="img_and_value">
                                         <p class="gallery-img"><img src="images/pillow_silk.png" alt="Lemon oil"></p>
                                         <p class="discription">SHAY PRINTED</p>
@@ -199,7 +200,7 @@
                                 <p class="addTo"><a class="addTo" href="">Add to Wishlist</a></p>
                                 <p class="addTo"><a class="addTo" href="">Add to Compare</a></p>  
                             </div>
-                            <div class="col-3 position">
+                            <div class="position">
                                 <div class="img_and_value">
                                         <p class="gallery-img"><img src="images/carnegie.png" alt="Lemon oil"></p>
                                         <p class="discription">CARNEGIE ALPACA THROW</p>
@@ -211,7 +212,7 @@
                                 <p class="addTo"><a class="addTo" href="">Add to Wishlist</a></p>
                                 <p class="addTo"><a class="addTo" href="">Add to Compare</a></p>   
                             </div>
-                            <div class="col-3 position">
+                            <div class="position">
                                 <div class="img_and_value">
                                         <p class="gallery-img"><img src="images/row.png" alt="Lemon oil"></p>
                                         <p class="discription">PARK ROW THROW</p>
@@ -224,7 +225,7 @@
                                 <p class="addTo"><a class="addTo" href="">Add to Compare</a></p> 
             
                             </div>
-                            <div class="col-3 position">
+                            <div class="position">
                                 <div class="img_and_value">
                                         <p class="gallery-img"><img src="images/gramecy.png" alt="Lemon oil"></p>
                                         <p class="discription">GRAMECY THROW</p>
@@ -237,7 +238,7 @@
                                 <p class="addTo"><a class="addTo" href="">Add to Compare</a></p> 
             
                             </div>
-                            <div class="col-3 position">
+                            <div class="position">
                                 <div class="img_and_value">
                                         <p class="gallery-img"><img src="images/set.png" alt="Lemon oil"></p>
                                         <p class="discription">PILLOW AND THROW SET</p>
@@ -291,5 +292,7 @@
     </section>
     <section id="end">
     </section>
+    <script defer src="fontawesome-free-5.0.4/svg-with-js/js/fontawesome-all.js"></script>
+    <script src="./main.js" defer></script>
 </body>
 </html>
